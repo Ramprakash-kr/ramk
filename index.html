@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="calci.css">
+</head>
+<body>
+  <div class="container">
+    <form>
+      <input type="text" id="result" value="">
+    </form>
+
+    <div class="keypad">
+      <button onclick="clearInput()" id="clear" class="highlight">AC</button>
+      <button onclick="deleteLast()" class="highlight">DEL</button>
+      <button name="/" onclick="addToInput(event)" class="highlight">÷</button>
+      <button name="%" onclick="addToInput(event)" class="highlight">%</button>
+      <button name="7" onclick="addToInput(event)">7</button>
+      <button name="8" onclick="addToInput(event)">8</button>
+      <button name="9" onclick="addToInput(event)">9</button>
+      <button name="*" onclick="addToInput(event)" class="highlight">×</button>
+      <button name="4" onclick="addToInput(event)">4</button>
+      <button name="5" onclick="addToInput(event)">5</button>
+      <button name="6" onclick="addToInput(event)">6</button>
+      <button name="-" onclick="addToInput(event)" class="highlight">-</button>
+      <button name="1" onclick="addToInput(event)">1</button>
+      <button name="2" onclick="addToInput(event)">2</button>
+      <button name="3" onclick="addToInput(event)">3</button>
+      <button name="+" onclick="addToInput(event)" class="highlight">+</button>
+      <button name="0" onclick="addToInput(event)">0</button>
+      <button name="." onclick="addToInput(event)">.</button>
+      <button onclick="calculateResult()" id="equal" class="highlight">=</button>
+      <button name="oddEven" onclick="checkOddEven()" class="highlight">odd/even</button>
+      <button name="fact" onclick="calculateFactorial()" class="highlight">fact</button>
+      <button name="isPrime" onclick="checkPrime()" class="highlight">isPrime</button>
+    </div>
+  </div>
+
+  <script src="calci.js"></script>
+</body>
+</html>
